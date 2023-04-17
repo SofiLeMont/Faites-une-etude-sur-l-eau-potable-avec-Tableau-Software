@@ -1,21 +1,14 @@
-# LivrablesOC
-Ce sont les livrables construits lors de ma formation OpenClassrooms durant les 10 projets.
+# Faites-une-etude-sur-l-eau-potable-avec-Tableau-Software
 
+Projet: Data Analyst en mission dans l’ONG DWFA (Drinking Water For All), je suis missionnée pour réaliser un tableau de bord présentant une vue globale de l’accès à l’eau potable dans le monde. Celui-ci permettra de choisir le pays à cibler dès que le bailleur de fonds aura donné sa réponse sur le domaine d’expertise qu’il souhaite financer.
 
-Ils sont classés par projet:
+Données d'entrée:
+- les données sur l'eau potable dans le monde (5 fichiers csv)
+- le compte-rendu de la réunion de lancement du projet
 
-P3: Créez et utilisez une base de données immobilière avec SQL
+Les livrables:
+- le blueprint
+- le mock-up
+- le tableau de bord
+- le support de présentation pour expliquer la démarche
 
-P4: Réalisez une étude de santé publique avec Python
-
-P5: Optimisez la gestion des données d'une boutique avec Python
-
-P6: Analysez les ventes d'une librairie avec Python
-
-P7: Analysez des indicateurs de l'égalité femme-homme avec l'ETL Knime
-
-P8: Faites une étude sur l'eau potable avec Tableau Software
-
-P9: Produisez une étude de marché avec Python
-
-P10: Détectez des faux billets avec Python
