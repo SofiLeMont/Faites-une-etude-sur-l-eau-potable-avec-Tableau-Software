@@ -4,8 +4,6 @@ Ce sont les livrables construits lors de ma formation OpenClassrooms durant les 
 
 Ils sont classés par projet:
 
-P2: Réalisez une analyse des ventes pour un e-commerce avec Excel
-
 P3: Créez et utilisez une base de données immobilière avec SQL
 
 P4: Réalisez une étude de santé publique avec Python
