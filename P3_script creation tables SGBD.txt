@@ -1,0 +1,50 @@
+CREATE TABLE bien (
+id_bien INTEGER NOT NULL,
+id_commune VARCHAR(10) NOT NULL,
+no_voie VARCHAR(10),
+ind_repetition VARCHAR(10),
+type_voie VARCHAR(10),
+voie VARCHAR(50),
+total_piece INTEGER,
+surface_carrez FLOAT,
+surface_local INTEGER,
+type_local VARCHAR(50),
+PRIMARY KEY(id_bien)
+);
+
+CREATE TABLE vente (
+id_vente INTEGER NOT NULL,
+id_bien INTEGER NOT NULL,
+montant FLOAT NOT NULL,
+date_signature DATE NOT NULL,
+PRIMARY KEY (id_vente)
+);
+
+
+CREATE TABLE departement (
+code_departement VARCHAR(10) NOT NULL,
+nom_departement VARCHAR(50) NOT NULL,
+nom_region VARCHAR(50) NOT NULL,
+PRIMARY KEY (code_departement)
+);
+
+CREATE TABLE population (
+id_commune VARCHAR(10) NOT NULL,
+annee INTEGER NOT NULL,
+nb_habitants INTEGER,
+PRIMARY KEY (id_commune,annee)
+);
+
+CREATE TABLE commune (
+id_commune VARCHAR(10) NOT NULL,
+code_departement VARCHAR(10) NOT NULL,
+nom_commune VARCHAR(50) NOT NULL,
+PRIMARY KEY (id_commune)
+);
+
+
+ALTER TABLE vente ADD FOREIGN KEY(id_bien) REFERENCES bien(id_bien);
+ALTER TABLE bien ADD FOREIGN KEY(id_commune) REFERENCES commune(id_commune);
+ALTER TABLE commune ADD FOREIGN KEY(code_departement) REFERENCES departement(code_departement);
+
+	
